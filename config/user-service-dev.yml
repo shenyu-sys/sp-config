@@ -19,7 +19,11 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka
       
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
         
 # 在末尾添加了一个新的用户数据
 sp:
